@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/practice.css"> -->
+    <title>Практика</title>
+</head>
+<body>
+    <h1>Практика</h1>
+    <!-- Калькуляторы фигур -->
+    <p class="chapter">Калькуляторы фигур</p> 
+    <!-- №1 -->
+    <p class="chapter">№1</p> 
+    <p>Вычисление периметра и площади квадрата</p>
+    <input type="text" placeholder="Длина" id="inp">
+    <input type="submit" id="button" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Ширина" id="inp2">
+    <p id="p">Периметр квадрата: </p>
+    <p id="p2">Площадь квадрата: </p>
+    <!-- №2 -->
+    <p class="chapter">№2</p> 
+    <p>Вычисление периметра и площади прямоугольника</p>
+    <input type="text" placeholder="Длина" id="inp3">
+    <input type="submit" id="button2" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Ширина" id="inp4">
+    <p id="p3">Периметр прямоугольника: </p>
+    <p id="p4">Площадь прямоугольника: </p>
+    <!-- №3 -->
+    <p class="chapter">№3</p> 
+    <p>Вычисление площади круга и длину оружности</p>
+    <input type="text" placeholder="Радиус" id="inp5">
+    <input type="submit" id="button3" value="Вычислить">
+    <p id="p5">Площадь круга: </p>
+    <p id="p6">Длина окружности: </p>
+    <!-- №4 -->
+    <p class="chapter">№4</p> 
+    <p>Вычисление площади треугольника по трем сторонам</p>
+    <input type="text" placeholder="Первая сторона" id="inp6">
+    <input type="submit" id="button4" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Вторая сторона" id="inp7">
+    <br>
+    <input type="text" placeholder="Третья сторона" id="inp8">
+    <p id="p7">Площадь треугольника по трем сторонам: </p>
+    <!-- Математические калькуляторы -->
+    <p class="chapter">Математические калькуляторы</p> 
+    <!-- №1 -->
+    <p class="chapter">№1</p> 
+    <input type="text" placeholder="Первый коэффицент" id="inp9">
+    <input type="submit" id="button5" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Второй коэффицент" id="inp10">
+    <br>
+    <input type="text" placeholder="Третий коэффицент" id="inp11">
+    <p id="p8">Корни уравнения: </p>
+    <!-- №2 -->
+    <p class="chapter">№2</p> 
+    <input type="text" placeholder="Первый катет" id="inp12">
+    <input type="submit" id="button6" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Второй катет" id="inp13">
+    <br>
+    <input type="text" placeholder="Гипотенуза" id="inp14">
+    <p id="p9">Ответ: </p>
+    <!-- №3 -->
+    <p class="chapter">№3</p> 
+    <input type="text" placeholder="Число" id="inp15">
+    <input type="submit" id="button7" value="Вычислить">
+    <!-- №4 -->
+    <p class="chapter">№4</p> 
+    <input type="text" placeholder="Число" id="inp16">
+    <input type="submit" id="button8" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Число" id="inp17">
+    <!-- №5 -->
+    <p class="chapter">№5</p> 
+    <input type="text" placeholder="Число" id="inp18">
+    <input type="submit" id="button9" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Число" id="inp19">
+    <!-- №6 -->
+    <p class="chapter">№6</p> 
+    <input type="text" placeholder="Число" id="inp20">
+    <input type="submit" id="button10" value="Вычислить">
+    <br>
+    <input type="text" placeholder="Число" id="inp21">
+    <!-- Анализатор текста  -->
+    <p class="chapter">Анализатор текста</p> 
+    <textarea id="textarea" cols="30" rows="2"></textarea>
+    <p id="p10"></p>
+    <!-- №5 -->
+    <p class="chapter">№5</p> 
+    <input type="checkbox" id="checkbox" data-elem="a">
+    <input type="checkbox" id="checkbox2" data-elem2="b">
+    <input type="checkbox" id="checkbox3" data-elem3="c">
+    <input type="checkbox" id="checkbox4" data-elem4="d">
+    <!-- Игра угадай число -->
+    <p class="chapter">Игра угадай число</p> 
+    <input type="text" id="inp22" placeholder="Введите число от 1 до 100">
+    <!-- Игра угадай ячейку -->
+    <p class="chapter">Игра угадай ячейку</p>
+    <!-- №2 -->
+    <p class="chapter">№2</p>
+    <p id="p11">Осталось времени <span id="span">120</span></p>
+    <!-- №1 -->
+    <p class="chapter">№1</p>
+    <table id="table"></table>
+    <!-- Экранная клавиатура  -->
+    <p class="chapter">Экранная клавиатура</p>
+    <div class="display"></div>
+    <div class="keyboard_line">
+        <input class="but" type="submit" id="but" value="`">
+        <input class="but" type="submit" id="but2" value="1">
+        <input class="but" type="submit" id="but3" value="2">
+        <input class="but" type="submit" id="but4" value="3">
+        <input class="but" type="submit" id="but5" value="4">
+        <input class="but" type="submit" id="but6" value="5">
+        <input class="but" type="submit" id="but7" value="6">
+        <input class="but" type="submit" id="but8" value="7">
+        <input class="but" type="submit" id="but9" value="8">
+        <input class="but" type="submit" id="but10" value="9">
+        <input class="but" type="submit" id="but11" value="0">
+        <input class="but" type="submit" id="but12" value="-">
+        <input class="but" type="submit" id="but13" value="=">
+        <input class="backspace" type="submit" id="but14" value="Backspace">
+    </div>
+    <div class="keyboard_line">
+        <input class="tab" type="submit" id="but15" value="Tab">
+        <input class="but" type="submit" id="but16" value="й">
+        <input class="but" type="submit" id="but17" value="ц">
+        <input class="but" type="submit" id="but18" value="у">
+        <input class="but" type="submit" id="but19" value="к">
+        <input class="but" type="submit" id="but20" value="е">
+        <input class="but" type="submit" id="but21" value="н">
+        <input class="but" type="submit" id="but22" value="г">
+        <input class="but" type="submit" id="but23" value="ш">
+        <input class="but" type="submit" id="but24" value="щ">
+        <input class="but" type="submit" id="but25" value="з">
+        <input class="but" type="submit" id="but26" value="х">
+        <input class="but" type="submit" id="but27" value="ъ">
+        <input class="enter" type="submit" id="but28" value="Enter">
+    </div>
+    <div class="keyboard_line">
+        <input class="caps_lock" type="submit" id="but29" value="Caps Lock">
+        <input class="but" type="submit" id="but30" value="ф">
+        <input class="but" type="submit" id="but31" value="ы">
+        <input class="but" type="submit" id="but32" value="в">
+        <input class="but" type="submit" id="but33" value="а">
+        <input class="but" type="submit" id="but34" value="п">
+        <input class="but" type="submit" id="but35" value="р">
+        <input class="but" type="submit" id="but36" value="о">
+        <input class="but" type="submit" id="but37" value="л">
+        <input class="but" type="submit" id="but38" value="д">
+        <input class="but" type="submit" id="but39" value="ж">
+        <input class="but" type="submit" id="but40" value="э">
+        <input class="but" type="submit" id="but41" value="\">
+    </div>
+    <div class="keyboard_line">
+        <input class="shift" type="submit" id="but42" value="Shift">
+        <input class="but" type="submit" id="but43" value="я">
+        <input class="but" type="submit" id="but44" value="ч">
+        <input class="but" type="submit" id="but45" value="с">
+        <input class="but" type="submit" id="but46" value="м">
+        <input class="but" type="submit" id="but47" value="и">
+        <input class="but" type="submit" id="but48" value="т">
+        <input class="but" type="submit" id="but49" value="ь">
+        <input class="but" type="submit" id="but50" value="б">
+        <input class="but" type="submit" id="but51" value="ю">
+        <input class="but" type="submit" id="but52" value=".">
+        <input class="shift2" type="submit" id="but53" value="Shift">
+    </div>
+    <div class="keyboard_line">
+        <input class="space" type="submit" id="but54" value="Space">
+    </div>
+    <!-- Линейный календарь  -->
+    <p class="chapter">Линейный календарь</p>
+    <div class="calendar">
+        <ul id="month">
+            <li class="previousMonth"><</li>
+            <div class="monthAndYears">
+                <li class="monthText"></li>
+                <li class="yearText"></li>
+            </div>
+            <li class="nextMonth">></li>
+        </ul>
+        <ul id="weekdays">
+            <li>Пн</li>
+            <li>Вт</li>
+            <li>Ср</li>
+            <li>Чт</li>
+            <li>Пт</li>
+            <li>Сб</li>
+            <li>Вс</li>
+        </ul>
+        <ul id="days"></ul>
+    </div>
+
+
+
+
+
+</div>
+    <!-- Поиск тегов  -->
+    
+    <p class="chapter">Поиск тегов</p>
+    <div class="search">
+        <div class="search_tag">
+            <input type="text" id="inp23">
+            <div class="block_textTag" data="html">
+                <p class="textTag">Тег "<span class="spancolor">html</span>" является контейнером, 
+                    который заключает в себе все содержимое веб-страницы, включая теги "<span class="spancolor">head</span>" 
+                    и "<span class="spancolor">body</span>". Открывающий и закрывающий теги "<span class="spancolor">html</span>" 
+                    в документе необязательны, но хороший стиль диктует непременное их использование.</p>
+            </div>
+            <div class="block_textTag" data="body">
+                <p class="textTag">HTML-элемент "<span class="spancolor">body</span>" представляет собой контент (содержимое) документа HTML. 
+                    В документе может быть только один элемент "<span class="spancolor">body</span>".</p>
+            </div>
+            <div class="block_textTag" data="!DOCTYPE">
+                <p class="textTag">Объявляет тип документа и предоставляет основную информацию для браузера — его язык и версия.</p>
+            </div>
+            <div class="block_textTag" data="a">
+                <p class="textTag">Создаёт гипертекстовые ссылки.</p>
+            </div>
+            <div class="block_textTag" data="abbr">
+                <p class="textTag">Определяет текст как аббревиатуру или акроним. Поясняющий текст задаётся с помощью атрибута <span class="spancolor">title</span>.</p>
+            </div>
+            <div class="block_textTag" data="address">
+                <p class="textTag">Задает контактные данные автора/владельца документа или статьи. Отображается в браузере курсивом.</p>
+            </div>
+            <div class="block_textTag" data="area">
+                <p class="textTag">Представляет собой гиперссылку с текстом, соответствующей определенной области на карте-изображении 
+                    или активную область внутри карты-изображения. Всегда вложен внутрь элемента "<span class="spancolor">map</span>".</p>
+            </div>
+            <div class="block_textTag" data="article">
+                <p class="textTag">Раздел контента, который образует независимую часть документа или сайта, например, статья в журнале, запись в блоге, комментарий.</p>
+            </div>
+            <div class="block_textTag" data="aside">
+                <p class="textTag">Представляет контент страницы, который имеет косвенное отношение к основному контенту страницы/сайта.</p>
+            </div>
+            <div class="block_textTag" data="aside">
+                <p class="textTag">Представляет контент страницы, который имеет косвенное отношение к основному контенту страницы/сайта.</p>
+            </div>
+            <div class="block_textTag" data="audio">
+                <p class="textTag">Загружает звуковой контент на веб-страницу.</p>
+            </div>
+            <div class="block_textTag" data="b">
+                <p class="textTag">Задает полужирное начертание отрывка текста, не придавая акцент или важность выделенному.</p>
+            </div>
+            <div class="block_textTag" data="base">
+                <p class="textTag">Задает базовый адрес (URL), относительно которого вычисляются все относительные адреса. 
+                    Это поможет избежать проблем при переносе страницы в другое место, 
+                    так как все ссылки будут работать, как и прежде.</p>
+            </div>
+            <div class="block_textTag" data="bdo">
+                <p class="textTag">Отображает текст в направлении, указанном в атрибуте dir, переопределяя текущее направление написания текста.</p>
+            </div>
+            <div class="block_textTag" data="bdi">
+                <p class="textTag">Изолирует отрывок текста, написанный на языке, в котором чтение текста происходит справа налево, от остального текста.</p>
+            </div>
+            <div class="block_textTag" data="blockquote">
+                <p class="textTag">Выделяет текст как цитату, применяется для описания больших цитат.</p>
+            </div>
+            <div class="block_textTag" data="br">
+                <p class="textTag">Перенос текста на новую строку.</p>
+            </div>
+            <div class="block_textTag" data="button">
+                <p class="textTag">Создает интерактивную кнопку. Элемент может содержать текст или изображение.</p>
+            </div>
+            <div class="block_textTag" data="canvas">
+                <p class="textTag">Холст-контейнер для динамического отображения изображений, таких как простые изображения, диаграммы, графики и т.п. 
+                    Для рисования используется скриптовый язык JavaScript.</p>
+            </div>
+            <div class="block_textTag" data="caption">
+                <p class="textTag">Добавляет подпись к таблице. Вставляется сразу после открывающего тега "<span class="spancolor">table</span>".</p>
+            </div>
+            <div class="block_textTag" data="cite">
+                <p class="textTag">Используется для указания источника цитирования. Отображается курсивом.</p>
+            </div>
+            <div class="block_textTag" data="code">
+                <p class="textTag">Представляет фрагмент программного кода, отображается шрифтом семейства monospace.</p>
+            </div>
+            <div class="block_textTag" data="col">
+                <p class="textTag">Выбирает для форматирования один или несколько столбцов таблицы, не содержащих информацию одного типа.</p>
+            </div>
+            <div class="block_textTag" data="colgroup">
+                <p class="textTag">Создает структурную группу столбцов, выделяющую множество логически однородных ячеек.</p>
+            </div>
+            <div class="block_textTag" data="data">
+                <p class="textTag">Элемент используется для связывания значения атрибута <span class="spancolor">value</span>, 
+                    которое представлено в машиночитаемом формате и может быть обработано компьютером, с содержимым элемента.</p>
+            </div>
+            <div class="block_textTag" data="datalist">
+                <p class="textTag">Элемент-контейнер для выпадающего списка элемента "<span class="spancolor">input</span>". 
+                    Варианты значений помещаются в элементы "<span class="spancolor">option</span>".</p>
+            </div>
+            <div class="block_textTag" data="dd">
+                <p class="textTag">Используется для описания термина из элемента "<span class="spancolor">dt</span>".</p>
+            </div>
+            <div class="block_textTag" data="del">
+                <p class="textTag">Помечает текст как удаленный, перечёркивая его.</p>
+            </div>
+            <div class="block_textTag" data="details">
+                <p class="textTag">Создаёт интерактивный виджет, который пользователь может открыть или закрыть. 
+                    Представляет собой контейнер для контента, 
+                    видимый заголовок виджета помещается в элемент "<span class="spancolor">summary</span>".</p>
+            </div>
+            <div class="block_textTag" data="dfn">
+                <p class="textTag">Определяет слово как термин, выделяя его курсивом. Текст, идущий следом, должен содержать расшифровку этого термина.</p>
+            </div>
+            <div class="block_textTag" data="dialog">
+                <p class="textTag">Интерактивный элемент, с которым взаимодействует пользователь для выполнения задачи, 
+                    например, диалоговое окно, инспектор или окно. 
+                    Без атрибута <span class="spancolor">open</span> не виден для пользователя.</p>
+            </div>
+            <div class="block_textTag" data="div">
+                <p class="textTag">Элемент-контейнер для разделов HTML-документа. Используется для группировки блочных элементов с целью форматирования стилями.</p>
+            </div>
+            <div class="block_textTag" data="dl">
+                <p class="textTag">Элемент-контейнер, внутри которого находятся термин и его описание.</p>
+            </div>
+            <div class="block_textTag" data="dt">
+                <p class="textTag">Используется для задания термина.</p>
+            </div>
+            <div class="block_textTag" data="em">
+                <p class="textTag">Выделяет важные фрагменты текста, отображая их курсивом.</p>
+            </div>
+            <div class="block_textTag" data="embed">
+                <p class="textTag">Элемент-контейнер для встраивания внешнего интерактивного контента или плагина.</p>
+            </div>
+            <div class="block_textTag" data="fieldset">
+                <p class="textTag">Группирует связанные элементы в форме, рисуя рамку вокруг них.</p>
+            </div>
+            <div class="block_textTag" data="figcaption">
+                <p class="textTag">Заголовок/подпись для элемента "<span class="spancolor">figure</span>".</p>
+            </div>
+            <div class="block_textTag" data="figure">
+                <p class="textTag">Самодостаточный элемент-контейнер для такого контента как иллюстрации, диаграммы, фотографии, 
+                    примеры кода, обычно с подписью.</p>
+            </div>
+            <div class="block_textTag" data="footer">
+                <p class="textTag">Определяет завершающую область (нижний колонтитул) документа или раздела.</p>
+            </div>
+            <div class="block_textTag" data="form">
+                <p class="textTag">Форма для сбора и отправки на сервер информации от пользователей. 
+                    Не работает без атрибута "<span class="spancolor">action</span>".</p>
+            </div>
+            <div class="block_textTag" data="h1">
+                <p class="textTag">Создает заголовки первого уровня для связанных с ними разделов.</p>
+            </div>
+            <div class="block_textTag" data="h2">
+                <p class="textTag">Создает заголовки второго уровня для связанных с ними разделов.</p>
+            </div>
+            <div class="block_textTag" data="h3">
+                <p class="textTag">Создает заголовки третьего уровня для связанных с ними разделов.</p>
+            </div>
+            <div class="block_textTag" data="h4">
+                <p class="textTag">Создает заголовки четвертого уровня для связанных с ними разделов.</p>
+            </div>
+            <div class="block_textTag" data="h5">
+                <p class="textTag">Создает заголовки пятого уровня для связанных с ними разделов.</p>
+            </div>
+            <div class="block_textTag" data="h6">
+                <p class="textTag">Создает заголовки шестого уровня для связанных с ними разделов.</p>
+            </div>
+            <div class="block_textTag" data="head">
+                <p class="textTag">Элемент-контейнер для метаданных HTML-документа, таких как 
+                    "<span class="spancolor">title</span>", "<span class="spancolor">meta</span>", "<span class="spancolor">script</span>", 
+                    "<span class="spancolor">link</span>", "<span class="spancolor">style</span>".</p>
+            </div>
+            <div class="block_textTag" data="header">
+                <p class="textTag">Секция для вводной информации сайта или группы навигационных ссылок. 
+                    Может содержать один или несколько заголовков, логотип, информацию об авторе.</p>
+            </div>
+            <div class="block_textTag" data="hr">
+                <p class="textTag">Горизонтальная линия для тематического разделения параграфов.</p>
+            </div>
+            <div class="block_textTag" data="i">
+                <p class="textTag">Выделяет отрывок текста курсивом, не придавая ему дополнительный акцент.</p>
+            </div>
+            <div class="block_textTag" data="iframe">
+                <p class="textTag">Создает встроенный фрейм, загружая в текущий HTML-документ другой документ.</p>
+            </div>
+            <div class="block_textTag" data="img">
+                <p class="textTag">Встраивает изображения в HTML-документ с помощью атрибута <span class="spancolor">src</span>, 
+                    значением которого является адрес встраиваемого изображения.</p>
+            </div>
+            <div class="block_textTag" data="input">
+                <p class="textTag">Создает многофункциональные поля формы, в которые пользователь может вводить данные.</p>
+            </div>
+            <div class="block_textTag" data="ins">
+                <p class="textTag">Выделяет текст подчеркиванием. Применяется для выделения изменений, вносимых в документ.</p>
+            </div>
+            <div class="block_textTag" data="kbd">
+                <p class="textTag">Выделяет текст, который должен быть введён пользователем с клавиатуры, шрифтом семейства monospace.</p>
+            </div>
+            <div class="block_textTag" data="label">
+                <p class="textTag">Добавляет текстовую метку для элемента "<span class="spancolor">input</span>".</p>
+            </div>
+            <div class="block_textTag" data="legend">
+                <p class="textTag">Заголовок элементов формы, сгруппированных с помощью элемента "<span class="spancolor">fieldset</span>".</p>
+            </div>
+            <div class="block_textTag" data="li">
+                <p class="textTag">Элемент маркированного или нумерованного списка.</p>
+            </div>
+            <div class="block_textTag" data="link">
+                <p class="textTag">Определяет отношения между документом и внешним ресурсом. 
+                    Также используется для подключения внешних таблиц стилей.</p>
+            </div>
+            <div class="block_textTag" data="main">
+                <p class="textTag">Контейнер для основного уникального содержимого документа. 
+                    На одной странице должно быть не более одного элемента "<span class="spancolor">main</span>".</p>
+            </div>
+            <div class="block_textTag" data="map">
+                <p class="textTag">Создаёт активные области на карте-изображении. 
+                    Является контейнером для элементов "<span class="spancolor">area</span>".</p>
+            </div>
+            <div class="block_textTag" data="mark">
+                <p class="textTag">Выделяет фрагменты текста, помечая их желтым фоном.</p>
+            </div>
+            <div class="block_textTag" data="meta">
+                <p class="textTag">Используется для хранения дополнительной информации о странице. 
+                Эту информацию используют браузеры для обработки страницы, а поисковые системы — для ее индексации. 
+                В блоке "<span class="spancolor">head</span>" может быть несколько элементов "<span class="spancolor">meta</span>", 
+                так как в зависимости от используемых атрибутов они несут разную информацию.</p>
+            </div>
+            <div class="block_textTag" data="meter">
+                <p class="textTag">Индикатор измерения в заданном диапазоне.</p>
+            </div>
+            <div class="block_textTag" data="nav">
+                <p class="textTag">Раздел документа, содержащий навигационные ссылки по сайту.</p>
+            </div>
+            <div class="block_textTag" data="noscript">
+                <p class="textTag">Определяет секцию, не поддерживающую сценарий (скрипт).</p>
+            </div>
+            <div class="block_textTag" data="object">
+                <p class="textTag">Контейнер для встраивания мультимедиа 
+                    (например, аудио, видео, Java-апплеты, ActiveX, PDF и Flash). 
+                    Также можно вставить другую веб-страницу в текущий HTML-документ. 
+                    Для передачи параметров встраиваемого плагина используется элемент "<span class="spancolor">param</span>".</p>
+            </div>
+            <div class="block_textTag" data="ol">
+                <p class="textTag">Упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</p>
+            </div>
+            <div class="block_textTag" data="optgroup">
+                <p class="textTag">Контейнер с заголовком для группы элементов "<span class="spancolor">option</span>".</p>
+            </div>
+            <div class="block_textTag" data="option">
+                <p class="textTag">Определяет вариант/опцию для выбора в раскрывающемся списке <span class="spancolor">select</span>, 
+                    <span class="spancolor">optgroup</span> или <span class="spancolor">datalist</span>.</p>
+            </div>
+            <div class="block_textTag" data="output">
+                <p class="textTag">Поле для вывода результата вычисления, рассчитанного с помощью скрипта.</p>
+            </div>
+            <div class="block_textTag" data="p">
+                <p class="textTag">Параграфы в тексте.</p>
+            </div>
+            <div class="block_textTag" data="param">
+                <p class="textTag">Определяет параметры для плагинов, встраиваемых с помощью элемента "<span class="spancolor">object</span>".</p>
+            </div>
+            <div class="block_textTag" data="picture">
+                <p class="textTag">Элемент-контейнер, содержащий один элемент <span class="spancolor">img</span> 
+                    и ноль или несколько элементов <span class="spancolor">source</span>. 
+                    Сам по себе ничего не отображает. Дает возможность браузеру выбирать наиболее подходящее изображение.</p>
+            </div>
+            <div class="block_textTag" data="pre">
+                <p class="textTag">Выводит текст без форматирования, с сохранением пробелов и переносов текста. 
+                    Может быть использован для отображения компьютерного кода, сообщения электронной почты и т.д.</p>
+            </div>
+            <div class="block_textTag" data="progress">
+                <p class="textTag">Индикатор выполнения задачи любого рода.</p>
+            </div>
+            <div class="block_textTag" data="q">
+                <p class="textTag">Определяет краткую цитату.</p>
+            </div>
+            <div class="block_textTag" data="ruby">
+                <p class="textTag">Контейнер для Восточно-Азиатских символов и их расшифровки.</p>
+            </div>
+            <div class="block_textTag" data="rb">
+                <p class="textTag">Определяет вложенный в него текст как базовый компонент аннотации.</p>
+            </div>
+            <div class="block_textTag" data="rt">
+                <p class="textTag">Добавляет краткую характеристику сверху или снизу от символов, 
+                    заключенных в элементе "<span class="spancolor">ruby</span>", выводится уменьшенным шрифтом.</p>
+            </div>
+            <div class="block_textTag" data="rtc">
+                <p class="textTag">Отмечает вложенный в него текст как дополнительную аннотацию.</p>
+            </div>
+            <div class="block_textTag" data="rp">
+                <p class="textTag">Выводит альтернативный текст в случае если браузер не поддерживает элемент "<span class="spancolor">ruby</span>".</p>
+            </div>
+            <div class="block_textTag" data="s">
+                <p class="textTag">Отображает текст, не являющийся актуальным, перечеркнутым.</p>
+            </div>
+            <div class="block_textTag" data="samp">
+                <p class="textTag">Используется для вывода текста, представляющего результат выполнения программного кода или скрипта,
+                     а также системные сообщения. Отображается моноширинным шрифтом.</p>
+            </div>
+            <div class="block_textTag" data="script">
+                <p class="textTag">Используется для определения сценария на стороне клиента (обычно JavaScript). 
+                    Содержит либо текст скрипта, либо указывает на внешний файл сценария с помощью атрибута <span class="spancolor">src</span>.</p>
+            </div>
+            <div class="block_textTag" data="section">
+                <p class="textTag">Определяет логическую область (раздел) страницы, обычно с заголовком.</p>
+            </div>
+            <div class="block_textTag" data="select">
+                <p class="textTag">Элемент управления, позволяющий выбирать значения из предложенного множества. 
+                    Варианты значений помещаются в "<span class="spancolor">option</span>".</p>
+            </div>
+            <div class="block_textTag" data="small">
+                <p class="textTag">Отображает текст шрифтом меньшего размера.</p>
+            </div>
+            <div class="block_textTag" data="source">
+                <p class="textTag">Указывает местоположение и тип альтернативных медиаресурсов для элементов "<span class="spancolor">picture</span>", 
+                    "<span class="spancolor">video</span>", "<span class="spancolor">audio</span>".</p>
+            </div>
+            <div class="block_textTag" data="span">
+                <p class="textTag">Контейнер для строчных элементов. 
+                    Можно использовать для форматирования отрывков текста, например, выделения цветом отдельных слов.</p>
+            </div>
+            <div class="block_textTag" data="strong">
+                <p class="textTag">Расставляет акценты в тексте, выделяя полужирным.</p>
+            </div>
+            <div class="block_textTag" data="style">
+                <p class="textTag">Подключает встраиваемые таблицы стилей.</p>
+            </div>
+            <div class="block_textTag" data="sub">
+                <p class="textTag">Задает подстрочное написание символов, например, индекса элемента в химических формулах.</p>
+            </div>
+            <div class="block_textTag" data="summary">
+                <p class="textTag">Создаёт видимый заголовок для элемента "<span class="spancolor">details</span>". 
+                    Отображается с закрашенным треугольником, 
+                    кликнув по которому можно просмотреть подробности заголовка.</p>
+            </div>
+            <div class="block_textTag" data="sup">
+                <p class="textTag">Задает надстрочное написание символов.</p>
+            </div>
+            <div class="block_textTag" data="table">
+                <p class="textTag">Элемент для создания таблицы.</p>
+            </div>
+            <div class="block_textTag" data="tbody">
+                <p class="textTag">Определяет тело таблицы.</p>
+            </div>
+            <div class="block_textTag" data="td">
+                <p class="textTag">Создает ячейку таблицы.</p>
+            </div>
+            <div class="block_textTag" data="template">
+                <p class="textTag">Используется для объявления фрагментов HTML-кода, 
+                    которые могут быть клонированы и вставлены в документ скриптом. 
+                    Содержимое элемента не является его дочерним элементом.</p>
+            </div>
+            <div class="block_textTag" data="textarea">
+                <p class="textTag">Создает большие поля для ввода текста.</p>
+            </div>
+            <div class="block_textTag" data="tfoot">
+                <p class="textTag">Определяет нижний колонтитул таблицы.</p>
+            </div>
+            <div class="block_textTag" data="th">
+                <p class="textTag">Создает заголовок ячейки таблицы.</p>
+            </div>
+            <div class="block_textTag" data="thead">
+                <p class="textTag">Определяет заголовок таблицы.</p>
+            </div>
+            <div class="block_textTag" data="time">
+                <p class="textTag">Определяет дату/время.</p>
+            </div>
+            <div class="block_textTag" data="title">
+                <p class="textTag">Заголовок HTML-документа, отображаемый в верхней части строки заголовка браузера. 
+                    Также может отображаться в результатах поиска, 
+                    поэтому это следует принимать во внимание предоставление названия.</p>
+            </div>
+            <div class="block_textTag" data="tr">
+                <p class="textTag">Создает строку таблицы.</p>
+            </div>
+            <div class="block_textTag" data="track">
+                <p class="textTag">Добавляет субтитры для элементов <span class="spancol">audio</span> и <span class="spancol">video</span>.</p>
+            </div>
+            <div class="block_textTag" data="u">
+                <p class="textTag">Выделяет отрывок текста подчёркиванием, без дополнительного акцента.</p>
+            </div>
+            <div class="block_textTag" data="ul">
+                <p class="textTag">Создает маркированный список.</p>
+            </div>
+            <div class="block_textTag" data="var">
+                <p class="textTag">Выделяет переменные из программ, отображая их курсивом.</p>
+            </div>
+            <div class="block_textTag" data="video">
+                <p class="textTag">Добавляет на страницу видео-файлы. Поддерживает 3 видео формата: MP4, WebM, Ogg.</p>
+            </div>
+            <div class="block_textTag" data="wbr">
+                <p class="textTag">Указывает браузеру возможное место разрыва длинной строки.</p>
+            </div>
+            <p id="error"></p>
+        </div>
+    </div>
+    <!-- Поиск исторических события  -->
+    <p class="chapter">Поиск исторических события </p>
+    <div class="search">
+        <div class="search_tag">
+            <input type="text" id="inp24" placeholder="Введите год и нажмите Enter">
+            <table id="table2"></table>
+        </div>
+    </div>
+    <!-- Гороскоп  -->
+    <p class="chapter">Гороскоп</p>
+    <div class="search">
+        <div class="search_tag">
+            <input type="text" id="inp25" placeholder="Введите дату рождения">
+            <div class="goroskop">
+            </div>
+        </div>
+    </div>
+    <!-- Сайт предсказаний  -->
+    <p class="chapter">Сайт предсказаний</p>
+    <div id="prediction">
+        <div id="timer">?</div>
+        <div id="good__text"></div>
+        <div id="bad__text"></div>
+        <button id="start" class="active">узнать свою судьбу</button>
+        <button id="stop">получить предсказание</button>
+    </div>
+    <!-- Автодополнение  -->
+    <p class="chapter">Автодополнение</p>
+    <div id="auto-completion">
+        <input id="elem">
+        <ul id="list"></ul>
+    </div>
+    <!-- Спойлер  -->
+    <p class="chapter">Спойлер</p>
+    <div class="spoilers">
+        <p>
+            абзац с текстом
+        </p>
+        <p>
+            абзац с текстом
+            <a href="" class="toggle" data-spoilers="1">развернуть спойлер 1</a>
+        </p>
+        <p class="spoiler" data-spoilers="1">
+            скрытый спойлер 1
+        </p>
+        <p>
+            абзац с текстом
+        </p>
+        <p>
+            абзац с текстом
+            <a href="" class="toggle"  data-spoilers="2">развернуть спойлер 2</a>
+        </p>
+        <p class="spoiler" data-spoilers="2">
+            скрытый спойлер 2
+        </p>
+        <p>
+            абзац с текстом
+        </p>
+    </div>
+    <!-- Вкладки  -->
+    <p class="chapter">Вкладки</p>
+    <div id="parent-tabs">
+        <div class="menu">
+            <a href="" class="active">вкладка 1</a>
+		<a href="">вкладка 2</a>
+		<a href="">вкладка 3</a>
+	</div>
+	<div class="tabs">
+		<div class="tab active">
+			текст вкладки 1
+		</div>
+		<div class="tab">
+			текст вкладки 2
+		</div>
+		<div class="tab">
+			текст вкладки 3
+		</div>
+	</div>
+    <!-- Аккордион -->
+    <p class="chapter">Аккордион</p>
+    <div id="accordion">
+        <div class="tabik active">
+            <div class="link">
+                <a href="#" >вкладка 1</a>
+            </div>
+            <div class="text">
+                текст вкладки 1
+            </div>
+        </div>
+        <div class="tabik">
+            <div class="link">
+                <a href="#" >вкладка 2</a>
+            </div>
+            <div class="text">
+                текст вкладки 2
+            </div>
+        </div>
+        <div class="tabik">
+            <div class="link">
+                <a href="#" >вкладка 3</a>
+            </div>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.
+            </div>
+        </div>
+    </div>
+    <!-- Игра в города -->
+    <p class="chapter">Игра в города</p>
+    <input id="field">
+    <div id="message"></div>
+    <!-- Чеклист -->
+    <p class="chapter">Чеклист</p>
+    <input id="checklist">
+    <ul id="ckList"></ul>
+    <!-- Записная книжка -->
+    <p class="chapter">Записная книжка</p>
+    <div id="wrapper">
+        <div id="menu">
+            <ul id="notes">
+            </ul>
+            <div id="create">
+                <button>новая запись</button>
+            </div>
+        </div>
+        <div id="text">
+            <textarea id="textBook"></textarea>
+            <button data-mode="create" id="saveText">сохранить</button>
+        </div>
+    </div>
+    <!-- Калькулятор продуктов -->
+    <p class="chapter">Калькулятор продуктов</p>
+    <div id="calculator">
+        <div id="form">
+            <input id="name" placeholder="название">
+            <input id="price" placeholder="цена">
+            <input id="amount" placeholder="количество">
+            <input id="add" type="button" value="добавить">
+        </div>
+        
+        <h2>Таблица продуктов:</h2>
+        <table id="tableProducts">
+            <tr>
+                <th>название</th>
+                <th>цена</th>
+                <th>кол-во</th>
+                <th>сумма</th>
+                <th>удалить</th>
+            </tr>
+        </table>
+        <div id="result">
+            общий итог: <span id="total">0</span>
+        </div>
+    </div>
+    <!-- Тесты -->
+    <p class="chapter">Тесты</p>
+    <div id="test">
+        <div>
+            <p>вопрос 1?</p>
+            <input data-right="ответ 1">
+        </div>
+        <div>
+            <p>вопрос 2?</p>
+            <input data-right="ответ 2">
+        </div>
+        <div>
+            <p>вопрос 3?</p>
+            <input data-right="ответ 3">
+        </div>
+        <button class="testBtn">Проверить</button>
+    </div>
+    <p class="chapter">Тесты 2</p>
+    <div id="test2"></div>
+    <button id="testBtn2">проверить ответы</button>
+    <!-- Слайдеры -->
+    <p class="chapter">Слайдеры</p>
+    <a href="#" id="left">←</a>
+    <a href="#" id="right">→</a>
+    <div id="slider"></div>
+
+    
+</div>
+    <script src="/Практика.js"></script>
+</body>
+</html>
